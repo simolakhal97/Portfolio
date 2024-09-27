@@ -268,7 +268,7 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
+  gap: 4rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -280,7 +280,9 @@ section {
 
 .about-containers,
 .about-details-container {
-  display: flex;
+ display: flex; /* Utiliser flexbox pour le conteneur */
+  flex-wrap: wrap; /* Permet de passer à la ligne suivante */
+  justify-content: space-between;
 }
 
 .about-pic {
@@ -365,9 +367,19 @@ article .icon {
 }
 
 .project-img {
-  border-radius: 2rem;
+  border-radius: 1rem;
   width: 100%;
   height: 90%;
+}
+.project-img-3 {
+  border-radius: 1rem;
+  width: 100%;
+  height: 300px;
+}
+.project-img-2 {
+  border-radius: 1rem;
+  width: 100%;
+  height: 300px;
 }
 .project-img-1 {
   border-radius: 2rem;
