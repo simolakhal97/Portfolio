@@ -158,6 +158,7 @@ section {
 
 .section-container {
   display: flex;
+  
 }
 
 /* PROFILE SECTION */
@@ -178,7 +179,7 @@ section {
 
 .section__text {
   align-self: center;
-  text-align: center;
+  text-align: -webkit-center;
 }
 
 .section__text p {
@@ -287,6 +288,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  right: 20pc;
 }
 
 .arrow {
