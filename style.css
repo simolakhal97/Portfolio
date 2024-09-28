@@ -269,8 +269,8 @@ section {
 }
 
 .about-containers {
-  gap: 4rem;
-  margin-bottom: 2rem;
+  gap: 8rem;
+  margin-bottom: 0rem;
   margin-top: 2rem;
 }
 
@@ -314,7 +314,7 @@ section {
 
 .section__pic-container {
   height: 400px;
-  width: 400px;
+  width: 500px;
   margin: auto 0;
 }
 
@@ -335,6 +335,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .article-container {
@@ -379,6 +380,11 @@ article .icon {
   height: 300px;
 }
 .project-img-2 {
+  border-radius: 1rem;
+  width: 100%;
+  height: 300px;
+}
+.project-img-9 {
   border-radius: 1rem;
   width: 100%;
   height: 300px;
