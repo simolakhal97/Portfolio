@@ -1,103 +1,102 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
+/* =========================================================
+   Responsive — Mohammed Lakhal Portfolio
+   ========================================================= */
+
+@media (max-width: 1080px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
   }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
+  .hero__content { order: 1; }
+  .hero__visual { order: 0; }
+  .hero__photo-frame { width: min(360px, 80%); }
+  .hero__desc { max-width: 620px; }
+
+  .skills { grid-template-columns: repeat(2, 1fr); }
+  .about { grid-template-columns: 1fr; gap: 70px; }
+  .about__media { max-width: 460px; }
+  .contact { grid-template-columns: 1fr; padding: 40px; }
 }
 
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
-  article {
-    font-size: 1rem;
-  }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
-  .about-containers,
-  .contact-info-upper-container,
-  .btn-container {
-    flex-wrap: wrap;
-  }
-  .contact-info-container {
-    margin: 0;
-  }
-  .contact-info-container p,
-  .nav-links li a {
-    font-size: 1rem;
-  }
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-  }
-  .nav-links {
+@media (max-width: 860px) {
+  .nav__links {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: min(320px, 82vw);
     flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 100px 26px 40px;
+    background: rgba(247, 247, 245, 0.96);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-left: 1px solid var(--line);
+    transform: translateX(100%);
+    transition: transform 0.5s var(--ease);
+    box-shadow: -30px 0 60px -30px rgba(13, 13, 16, 0.2);
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
+  .nav__links.is-open { transform: translateX(0); }
+  .nav__links a {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 6px;
   }
-  .section__text__p2 {
-    font-size: 1.25rem;
+  .nav__links a::after { display: none; }
+
+  .burger { display: flex; }
+
+  .projects { grid-template-columns: 1fr; }
+  .project--wide {
+    grid-column: auto;
+    flex-direction: column;
   }
-  .title {
-    font-size: 2rem;
+  .project--wide .project__media { min-height: 0; aspect-ratio: 16 / 10; }
+  .project--wide .project__info { padding: 26px; }
+}
+
+@media (max-width: 640px) {
+  .container { padding: 0 20px; }
+  .nav__inner { padding: 16px 20px; }
+  .nav__logo-text { display: none; }
+
+  .section { padding: 76px 0; }
+  .section__head { margin-bottom: 40px; }
+
+  .hero { padding: 120px 0 70px; }
+  .hero__inner { padding: 0 20px; }
+  .hero__name { font-size: 40px; }
+  .hero__role { font-size: 22px; flex-wrap: wrap; }
+  .hero__cta { flex-direction: column; align-items: stretch; }
+  .hero__cta .btn { justify-content: center; }
+  .badge--exp { left: -8px; bottom: 40px; }
+  .badge--stack { right: -8px; }
+
+  .skills { grid-template-columns: 1fr; }
+  .about__info { grid-template-columns: 1fr; }
+  .about__stats {
+    right: 10px;
+    padding: 14px;
   }
-  .text-container {
-    text-align: justify;
-  }
+
+  .timeline { padding-left: 30px; }
+  .timeline::before { left: 6px; }
+  .tl-rail { left: -30px; top: 8px; }
+  .tl-card { padding: 22px; }
+  .tl-head { flex-direction: column; gap: 12px; }
+  .tl-meta { align-items: flex-start; text-align: left; }
+  .tl-company { font-size: 23px; }
+  .tl-project { gap: 13px; }
+  .tl-project__num { width: 38px; height: 38px; font-size: 13px; }
+  .tl-project__body h4 { font-size: 15px; }
+  .tl-list li { font-size: 13.5px; }
+
+  .contact { padding: 26px; }
+  .contact__form { padding: 20px; }
+
+  .footer__inner { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 400px) {
+  .hero__name { font-size: 34px; }
+  .lang-toggle__opt { padding: 5px 9px; }
 }

@@ -1,582 +1,819 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lakhal-mohammed</title>
+    <meta
+      name="description"
+      content="Mohammed Lakhal — Full Stack Java Engineer. Spring Boot, React, Microservices."
+    />
+    <title>Mohammed Lakhal — Full Stack Java Engineer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Lakhal Mohammed</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- PRELOADER -->
+    <div class="preloader" id="preloader">
+      <div class="preloader__mark">
+        <span>M</span><span>L</span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Lakhal Mohammed</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/prfile-2.png" 
-        style="border-radius: 1%;
-         width: 350px;" 
-         alt="Lakhal Mohammed profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Bonjour, je m'appelle</p>
-        <h1 class="title">Lakhal Mohammed</h1>
-        <p class="section__text__p2">Full Stack Developer </p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/lakhal-mohammed-7ba5b3229/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/simolakhal97'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/DSC_1266.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1 ans <br /> Stagiaire Full Stack Developer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Ingénieur informatique <br>
-                UPM – Université Privée de Marrakech
-              </p>
-            </div>
-            
-          </div>
-          <br>
-          <div class="details-container">
-            <img
-              src="./assets/experience.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Les Certificats  </h3>
-          <div class="Cert-containers">
-            <img src="./assets/react.png"
-            alt="certificats icon"
-            class="certif-img"/>
-            <img src="./assets/spring .png"
-            alt="certificats icon"
-            class="certif-img"/>
-            <img src="./assets/docker.png"
-            alt="certificats icon"
-            class="certif-img"/>
-          </div>
-          </div>
-        </div>
-        </div>
-        <br>
-        <p>
-          En tant que développeur full stack fraîchement diplômé d'une université d'informatique, je suis désireux d'appliquer mes compétences et mes connaissances pour contribuer au développement de solutions innovantes. Mon expertise réside dans le développement Web et les services Web. Je suis un professionnel fiable et axé sur le client qui aime apprendre et rester au courant des dernières technologies dans le domaine.       </p>
-    
-      </div>
-     
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explorez mon</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tailwind</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React js </h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>jQuery</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>XML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JSON</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring Boot</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring Batch</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring Security</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spring Data</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java JEE</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laravel</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">DevOps</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitLab</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>GitHub</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Keycloak</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker Swarm</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Jenkins</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SonarQube </h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Parcourir mes récentst</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/projet-5.png"
-                alt="Project 2"
-                class="project-img-2"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title"> GFA Gestion des files d'attente</h2>
-            <h6>Afin d’aider les clients CIH a savoir le statut des files d’attente des agences depuis le canal mobile : status des services commercial et opérationnel nous avons Créer d’un nouveau micro service qui sera appelé par le canal mobile pour donner statut des services commercial et opérationnel des agences. et donner les agences les plus proches d’un client (LAT et LON)</h6>
-            <div class="btn-container">
-            
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/cih-bank.jpg"
-                alt="Project 1"
-                class="project-img-9"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title"> CIH Tool Box</h2>
-           <h6>Le projet permet aux équipes support de consulter les messages des  files 
-            d’attente erreurs sans avoir l'accès direct aux serveur MQ PROD et marquer 
-            les marqué comme résolu après une analyse, la solution propose également
-             d’autre feature comme la recherche par plusieurs critères
-              (fiunction Id,Code opération, date) et la consultation
-               de l'historique de batch, parce que un batch permet de transférer les message vers une BD. </h6>
-            <div class="btn-container">
-            
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/projet-4.png"
-                alt="Project 2"
-                class="project-img-2"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Affectation Massique des Cartes Prépayées</h2>
-            <h6>Le besoin est de créer en masse des tiers et leur affecter une carte prépayée.
+      <div class="preloader__bar"><i></i></div>
+    </div>
 
-              nous avons donc développé un batch de création en masse en spring batch en se basant sur un fichier CSV qui contient les informations des niveaux et les informations de la carte associée.</h6>
-            <div class="btn-container">
-            
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/1.jpg"
-                alt="Project 1"
-                class="project-img-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">SITE E-COMMERCE DE PARFUMS</h2>
-            <h6>Créer une application e-commerce pour vendre des parfums pour hommes et femmes</h6>
-            <div class="btn-container">
-             
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/projet-1.jpg"
-                alt="Project 1"
-                class="project-img-1"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title"> Livraison de colis</h2>
-            <h6>création d'un projet de livraison de colis pour livrer des colis aux clients d'une entreprise</h6>
-            <div class="btn-container">
-             
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/app-3.jpg"
-                alt="Project 3"
-                class="project-img-3"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">  gestion des absences</h2>
-            <h6>création d'un projet de gestion des absences des salariés dans une entreprise</h6>
-            <div class="btn-container">
-            
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/app-6.jpg"
-                alt="Project 3"
-                class="project-img-3"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">étude de marché</h2>
-            <h6>Créer une application web permet d'importer ou d'exporter les fichiers des concurrents soit sur papier soit sur site
-              Nous analysons les dossiers pour en extraire le moins disant (le gagnant du marché).
-            </h6>
-            <div class="btn-container">
-            
-            </div>
-          </div>
-         
+    <!-- CURSOR GLOW -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- PROGRESS BAR -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAV -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-mark">ML</span>
+          <span class="nav__logo-text">Mohammed Lakhal</span>
+        </a>
+
+        <nav class="nav__links" id="navLinks">
+          <a href="#home" data-fr="Accueil" data-en="Home">Accueil</a>
+          <a href="#about" data-fr="À propos" data-en="About">À propos</a>
+          <a href="#skills" data-fr="Compétences" data-en="Skills">Compétences</a>
+          <a href="#experience" data-fr="Expérience" data-en="Experience">Expérience</a>
+          <a href="#projects" data-fr="Projets" data-en="Projects">Projets</a>
+          <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+        </nav>
+
+        <div class="nav__actions">
+          <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+            <span class="lang-toggle__opt is-active" data-lang="fr">FR</span>
+            <span class="lang-toggle__opt" data-lang="en">EN</span>
+          </button>
+          <button class="burger" id="burger" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
-    
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Entrer en contact</p>
-      <h1 class="title">Contactez-moi</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLdVzjdNFQLtHMcbkklfWRHBVSRmWkjcbrZbSrsrwwndlBvCHRSFddnRLstMwFgHNVNWXz">mohammedlakhal272@gmail.com</a></p>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="hero__bg">
+          <div class="orb orb--1"></div>
+          <div class="orb orb--2"></div>
+          <div class="grid-lines"></div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/lakhal-mohammed-7ba5b3229/">LinkedIn</a></p>
+
+        <div class="hero__inner">
+          <div class="hero__content">
+            <span class="hero__pill reveal" data-delay="0">
+              <span class="dot"></span>
+              <span data-fr="Disponible pour de nouvelles opportunités" data-en="Available for new opportunities"
+                >Disponible pour de nouvelles opportunités</span
+              >
+            </span>
+
+            <p class="hero__hello reveal" data-delay="1" data-fr="Bonjour, je suis" data-en="Hello, I'm">
+              Bonjour, je suis
+            </p>
+            <h1 class="hero__name reveal" data-delay="2">Mohammed <span class="grad">Lakhal</span></h1>
+
+            <div class="hero__role reveal" data-delay="3">
+              <span class="hero__role-static" data-fr="Ingénieur" data-en="Java Engineer">Ingénieur</span>
+              <div class="hero__typewriter">
+                <span id="typewriter"></span><span class="caret"></span>
+              </div>
+            </div>
+
+            <p
+              class="hero__desc reveal"
+              data-delay="4"
+              data-fr="Ingénieur Informatique spécialisé en développement Full Stack. Java, Spring Boot, React.js, microservices, APIs REST et solutions SaaS sécurisées et évolutives."
+              data-en="Software Engineer specialised in Full Stack development. Java, Spring Boot, React.js, microservices, REST APIs and secure, scalable SaaS solutions."
+            >
+              Ingénieur Informatique spécialisé en développement Full Stack. Java, Spring Boot, React.js,
+              microservices, APIs REST et solutions SaaS sécurisées et évolutives.
+            </p>
+
+            <div class="hero__cta reveal" data-delay="5">
+              <a href="#projects" class="btn btn--primary">
+                <span data-fr="Voir mes projets" data-en="View my work">Voir mes projets</span>
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="./assets/resume-example.pdf" target="_blank" rel="noopener" class="btn btn--ghost">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-fr="Télécharger CV" data-en="Download CV">Télécharger CV</span>
+              </a>
+            </div>
+
+            <div class="hero__socials reveal" data-delay="6">
+              <a href="https://www.linkedin.com/in/lakhal-mohammed-7ba5b3229/" target="_blank" rel="noopener" aria-label="LinkedIn" class="soc">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.4 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.21V21H9z"/></svg>
+              </a>
+              <a href="https://github.com/simolakhal97" target="_blank" rel="noopener" aria-label="GitHub" class="soc">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+              </a>
+              <a href="mailto:mohammedlakhal272@gmail.com" aria-label="Email" class="soc">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__visual reveal" data-delay="3">
+            <div class="hero__photo-frame">
+              <div class="hero__photo-glow"></div>
+              <img src="assets/profile-hero.png.png" alt="Mohammed Lakhal" class="hero__photo" />
+              <div class="badge badge--exp">
+                <strong data-count="2" data-suffix="+">0</strong><span data-fr="ans d'expérience" data-en="yrs experience">ans d'expérience</span>
+              </div>
+              <div class="badge badge--stack">
+                <span class="badge__icons">
+                  <i style="background:#68a063">J</i><i style="background:#6db33f">S</i><i style="background:#61dafb">R</i>
+                </span>
+                <span data-fr="Java · Spring · React" data-en="Java · Spring · React">Java · Spring · React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll down">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <span>Java</span><span>•</span><span>Spring Boot</span><span>•</span><span>Spring Security</span><span>•</span>
+          <span>Spring Batch</span><span>•</span><span>Microservices</span><span>•</span><span>REST APIs</span><span>•</span>
+          <span>React.js</span><span>•</span><span>Next.js</span><span>•</span><span>TypeScript</span><span>•</span>
+          <span>PostgreSQL</span><span>•</span><span>MongoDB</span><span>•</span><span>Docker</span><span>•</span>
+          <span>Keycloak</span><span>•</span><span>IBM MQ</span><span>•</span><span>GitLab CI/CD</span><span>•</span>
         </div>
       </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="eyebrow" data-fr="À propos" data-en="About">À propos</span>
+            <h2 class="section__title" data-fr="Concevoir des solutions robustes & évolutives" data-en="Building robust & scalable solutions">
+              Concevoir des solutions robustes &amp; évolutives
+            </h2>
+          </div>
+
+          <div class="about">
+            <div class="about__media reveal">
+              <div class="about__photo-wrap">
+                <img src="./assets/profile-about.png" alt="Mohammed Lakhal" />
+              </div>
+              <div class="about__stats">
+                <div class="stat">
+                  <strong data-count="8" data-suffix="+">0</strong>
+                  <span data-fr="Projets livrés" data-en="Projects shipped">Projets livrés</span>
+                </div>
+                <div class="stat">
+                  <strong data-count="10" data-suffix="+">0</strong>
+                  <span data-fr="Technologies" data-en="Technologies">Technologies</span>
+                </div>
+                <div class="stat">
+                  <strong data-count="2">0</strong>
+                  <span data-fr="Années d'expérience" data-en="Years experience">Années d'expérience</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__body reveal">
+              <p
+                class="about__lead"
+                data-fr="Ingénieur Informatique spécialisé en développement Full Stack avec une expérience professionnelle sur des applications web et des solutions SaaS. J'évolue dans des environnements exigeants, notamment dans le secteur bancaire."
+                data-en="Software Engineer specialised in Full Stack development with professional experience on web applications and SaaS solutions. I work in demanding environments, particularly in the banking sector."
+              >
+                Ingénieur Informatique spécialisé en développement Full Stack avec une expérience
+                professionnelle sur des applications web et des solutions SaaS. J'évolue dans des
+                environnements exigeants, notamment dans le secteur bancaire.
+              </p>
+              <p
+                data-fr="Habitué à concevoir des solutions robustes, sécurisées et évolutives dans un environnement Agile, avec intégration de Keycloak, Spring Security, IBM MQ, Docker et CI/CD."
+                data-en="Used to designing robust, secure and scalable solutions in an Agile environment, with Keycloak, Spring Security, IBM MQ, Docker and CI/CD integration."
+              >
+                Habitué à concevoir des solutions robustes, sécurisées et évolutives dans un environnement
+                Agile, avec intégration de Keycloak, Spring Security, IBM MQ, Docker et CI/CD.
+              </p>
+
+              <div class="about__info">
+                <div class="info-card">
+                  <span class="info-card__icon">✦</span>
+                  <div>
+                    <h4 data-fr="Formation" data-en="Education">Formation</h4>
+                    <p data-fr="Ingénieur TICSE — Université Privée de Marrakech (2022–2024)" data-en="TICSE Engineering — Private University of Marrakech (2022–2024)">
+                      Ingénieur TICSE — Université Privée de Marrakech (2022–2024)
+                    </p>
+                  </div>
+                </div>
+                <div class="info-card">
+                  <span class="info-card__icon">◎</span>
+                  <div>
+                    <h4 data-fr="Localisation" data-en="Location">Localisation</h4>
+                    <p data-fr="Casablanca, Maroc — ouvert au remote" data-en="Casablanca, Morocco — open to remote">Casablanca, Maroc — ouvert au remote</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2024 Lakhal Mohammed.Tous droits réservés.</p>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="eyebrow" data-fr="Compétences" data-en="Skills">Compétences</span>
+            <h2 class="section__title" data-fr="Ma boîte à outils technique" data-en="My technical toolkit">
+              Ma boîte à outils technique
+            </h2>
+          </div>
+
+          <div class="skills">
+            <article class="skill-card reveal">
+              <div class="skill-card__top">
+                <span class="skill-card__badge">01</span>
+                <h3 data-fr="Backend" data-en="Backend">Backend</h3>
+              </div>
+              <div class="chips">
+                <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>Spring Data JPA</span>
+                <span>Hibernate</span><span>Spring Batch</span><span>REST APIs</span><span>Microservices</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__top">
+                <span class="skill-card__badge">02</span>
+                <h3 data-fr="Frontend" data-en="Frontend">Frontend</h3>
+              </div>
+              <div class="chips">
+                <span>React.js</span><span>Next.js</span><span>JavaScript</span><span>TypeScript</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__top">
+                <span class="skill-card__badge">03</span>
+                <h3 data-fr="Données" data-en="Data">Données</h3>
+              </div>
+              <div class="chips">
+                <span>PostgreSQL</span><span>MongoDB</span><span>MySQL</span><span>SQL</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__top">
+                <span class="skill-card__badge">04</span>
+                <h3 data-fr="Sécurité" data-en="Security">Sécurité</h3>
+              </div>
+              <div class="chips">
+                <span>Keycloak</span><span>OAuth2</span><span>JWT</span><span>IBM MQ</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__top">
+                <span class="skill-card__badge">05</span>
+                <h3 data-fr="DevOps & Outils" data-en="DevOps & Tools">DevOps &amp; Outils</h3>
+              </div>
+              <div class="chips">
+                <span>Docker</span><span>GitLab CI/CD</span><span>Jenkins</span><span>GitHub Actions</span>
+                <span>Maven</span><span>SonarQube</span><span>Git</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <div class="skill-card__top">
+                <span class="skill-card__badge">06</span>
+                <h3 data-fr="Méthodes" data-en="Practices">Méthodes</h3>
+              </div>
+              <div class="chips">
+                <span>OOP</span><span>Agile / Scrum</span><span>Tests (JUnit 5, Mockito)</span>
+                <span>OpenAPI / Swagger</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="eyebrow" data-fr="Parcours" data-en="Career">Parcours</span>
+            <h2 class="section__title" data-fr="Expérience professionnelle" data-en="Professional experience">
+              Expérience professionnelle
+            </h2>
+          </div>
+
+          <div class="timeline">
+            <!-- ZATSIT -->
+            <article class="tl-item reveal">
+              <div class="tl-rail"><span class="tl-dot"></span></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <div class="tl-head__main">
+                    <span class="tl-role" data-fr="Développeur Full Stack Freelance · Remote" data-en="Freelance Full Stack Developer · Remote">
+                      Développeur Full Stack Freelance · Remote
+                    </span>
+                    <h3 class="tl-company grad">Zatsit</h3>
+                  </div>
+                  <div class="tl-meta">
+                    <span class="tl-date" data-fr="Mai 2026 – Présent" data-en="May 2026 – Present">Mai 2026 – Présent</span>
+                    <span class="tl-loc" data-fr="Remote" data-en="Remote">Remote</span>
+                  </div>
+                </div>
+
+                <div class="tl-projects">
+                  <div class="tl-project">
+                    <span class="tl-project__num">01</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Digital Engagement — Segmentation client & gestion de campagnes" data-en="Digital Engagement — Customer segmentation & campaign management">
+                        Digital Engagement — Segmentation client &amp; gestion de campagnes
+                      </h4>
+                      <ul class="tl-list">
+                        <li data-fr="Conception et développement d'une plateforme bancaire de Digital Engagement dédiée à la segmentation client, à la création d'audiences ciblées et à la gestion de campagnes personnalisées." data-en="Design and development of a banking Digital Engagement platform dedicated to customer segmentation, targeted audience creation and personalised campaign management.">Conception et développement d'une plateforme bancaire de Digital Engagement dédiée à la segmentation client, à la création d'audiences ciblées et à la gestion de campagnes personnalisées.</li>
+                        <li data-fr="Développement Full Stack avec Java 17, Spring Boot et React.js, au sein d'une architecture microservices basée sur Spring Cloud et OpenFeign." data-en="Full Stack development with Java 17, Spring Boot and React.js, within a microservices architecture based on Spring Cloud and OpenFeign.">Développement Full Stack avec Java 17, Spring Boot et React.js, au sein d'une architecture microservices basée sur Spring Cloud et OpenFeign.</li>
+                        <li data-fr="Conception de microservices spécialisés : Segment Definition, Segment Membership, Audience Definition et Audience Calculation & Materialization." data-en="Design of specialised microservices: Segment Definition, Segment Membership, Audience Definition and Audience Calculation & Materialization.">Conception de microservices spécialisés : Segment Definition, Segment Membership, Audience Definition et Audience Calculation &amp; Materialization.</li>
+                        <li data-fr="Mécanismes asynchrones de calcul et de matérialisation des audiences à grande échelle : traitement par lots, pagination, planification et reprise sur erreur." data-en="Asynchronous large-scale audience calculation and materialization: batching, pagination, scheduling and error recovery.">Mécanismes asynchrones de calcul et de matérialisation des audiences à grande échelle : traitement par lots, pagination, planification et reprise sur erreur.</li>
+                        <li data-fr="API REST sécurisées avec Spring Security, OAuth2/JWT et Keycloak, documentées avec OpenAPI/Swagger." data-en="Secured REST APIs with Spring Security, OAuth2/JWT and Keycloak, documented with OpenAPI/Swagger.">API REST sécurisées avec Spring Security, OAuth2/JWT et Keycloak, documentées avec OpenAPI/Swagger.</li>
+                        <li data-fr="Gestion des données avec PostgreSQL et MongoDB, et communications inter-services résilientes avec OpenFeign." data-en="Data management with PostgreSQL and MongoDB, and resilient inter-service communication with OpenFeign.">Gestion des données avec PostgreSQL et MongoDB, et communications inter-services résilientes avec OpenFeign.</li>
+                        <li data-fr="Tests automatisés (JUnit 5, Mockito, Testcontainers) et observabilité (Micrometer, Prometheus, OpenTelemetry, Spring Actuator)." data-en="Automated testing (JUnit 5, Mockito, Testcontainers) and observability (Micrometer, Prometheus, OpenTelemetry, Spring Actuator).">Tests automatisés (JUnit 5, Mockito, Testcontainers) et observabilité (Micrometer, Prometheus, OpenTelemetry, Spring Actuator).</li>
+                        <li data-fr="Industrialisation et déploiement via Docker, GitLab CI/CD et Jenkins." data-en="Industrialisation and deployment via Docker, GitLab CI/CD and Jenkins.">Industrialisation et déploiement via Docker, GitLab CI/CD et Jenkins.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Java 17</span><span>Spring Boot</span><span>React.js</span><span>Spring Cloud</span><span>OpenFeign</span><span>Keycloak</span><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span></div>
+                    </div>
+                  </div>
+
+                  <div class="tl-project">
+                    <span class="tl-project__num">02</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Digital Assist — Banque" data-en="Digital Assist — Banking">Digital Assist — Banque</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Développement d'une plateforme bancaire de Digital Assist avec React.js, TypeScript et Spring Boot." data-en="Development of a banking Digital Assist platform with React.js, TypeScript and Spring Boot.">Développement d'une plateforme bancaire de Digital Assist avec React.js, TypeScript et Spring Boot.</li>
+                        <li data-fr="Conception et développement de microservices et d'API REST sécurisées." data-en="Design and development of microservices and secured REST APIs.">Conception et développement de microservices et d'API REST sécurisées.</li>
+                        <li data-fr="Implémentation de fonctionnalités de segmentation client et de création d'audiences ciblées." data-en="Implementation of customer segmentation and targeted audience creation features.">Implémentation de fonctionnalités de segmentation client et de création d'audiences ciblées.</li>
+                        <li data-fr="Développement de fonctionnalités de gestion et de personnalisation de campagnes multicanales." data-en="Development of multi-channel campaign management and personalisation features.">Développement de fonctionnalités de gestion et de personnalisation de campagnes multicanales.</li>
+                        <li data-fr="Intégration de Keycloak pour l'authentification, la gestion des rôles et le contrôle des accès." data-en="Keycloak integration for authentication, role management and access control.">Intégration de Keycloak pour l'authentification, la gestion des rôles et le contrôle des accès.</li>
+                      </ul>
+                      <div class="tl-tags"><span>React.js</span><span>TypeScript</span><span>Spring Boot</span><span>Keycloak</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- KAZ-IA -->
+            <article class="tl-item reveal">
+              <div class="tl-rail"><span class="tl-dot"></span></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <div class="tl-head__main">
+                    <span class="tl-role" data-fr="Développeur Full Stack" data-en="Full Stack Developer">Développeur Full Stack</span>
+                    <h3 class="tl-company grad">KAZ-IA</h3>
+                  </div>
+                  <div class="tl-meta">
+                    <span class="tl-date" data-fr="Mars 2025 – Mai 2026" data-en="Mar 2025 – May 2026">Mars 2025 – Mai 2026</span>
+                    <span class="tl-loc">Marrakech</span>
+                  </div>
+                </div>
+
+                <div class="tl-projects">
+                  <div class="tl-project">
+                    <span class="tl-project__num">01</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Plateforme SaaS CRM multi-tenant" data-en="Multi-Tenant SaaS CRM Platform">Plateforme SaaS CRM multi-tenant</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Développement d'une plateforme CRM SaaS basée sur Java, Spring Boot et React.js." data-en="Development of a SaaS CRM platform based on Java, Spring Boot and React.js.">Développement d'une plateforme CRM SaaS basée sur Java, Spring Boot et React.js.</li>
+                        <li data-fr="Conception et développement de microservices et d'API REST sécurisées." data-en="Design and development of microservices and secured REST APIs.">Conception et développement de microservices et d'API REST sécurisées.</li>
+                        <li data-fr="Intégration de Keycloak pour la gestion des identités, des rôles et des autorisations (RBAC)." data-en="Keycloak integration for identity, role and access (RBAC) management.">Intégration de Keycloak pour la gestion des identités, des rôles et des autorisations (RBAC).</li>
+                        <li data-fr="Modélisation et gestion des données avec PostgreSQL, avec isolation des données entre les tenants." data-en="Data modelling and management with PostgreSQL, with data isolation between tenants.">Modélisation et gestion des données avec PostgreSQL, avec isolation des données entre les tenants.</li>
+                        <li data-fr="Conteneurisation des services avec Docker et automatisation des pipelines CI/CD avec GitLab." data-en="Service containerisation with Docker and CI/CD pipeline automation with GitLab.">Conteneurisation des services avec Docker et automatisation des pipelines CI/CD avec GitLab.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Java</span><span>Spring Boot</span><span>React.js</span><span>Keycloak</span><span>PostgreSQL</span><span>Docker</span><span>GitLab CI/CD</span></div>
+                    </div>
+                  </div>
+
+                  <div class="tl-project">
+                    <span class="tl-project__num">02</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Plateforme d'extraction intelligente de documents" data-en="Intelligent Document Extraction Platform">Plateforme d'extraction intelligente de documents</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Conception d'une plateforme d'analyse et d'extraction de données depuis des documents à l'aide d'un moteur IA basé sur des modèles dynamiques." data-en="Design of a platform to analyse and extract data from documents using an AI engine based on dynamic models.">Conception d'une plateforme d'analyse et d'extraction de données depuis des documents à l'aide d'un moteur IA basé sur des modèles dynamiques.</li>
+                        <li data-fr="Full Stack Next.js (Frontend & Backend — API Routes / Server Actions)." data-en="Next.js Full Stack (Frontend & Backend — API Routes / Server Actions).">Full Stack Next.js (Frontend &amp; Backend — API Routes / Server Actions).</li>
+                        <li data-fr="Base de données MongoDB et moteur d'extraction et parsing de documents." data-en="MongoDB database and document extraction & parsing engine.">Base de données MongoDB et moteur d'extraction et parsing de documents.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Next.js</span><span>TypeScript</span><span>MongoDB</span><span>IA / Parsing</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- CIH BANK -->
+            <article class="tl-item reveal">
+              <div class="tl-rail"><span class="tl-dot"></span></div>
+              <div class="tl-card">
+                <div class="tl-head">
+                  <div class="tl-head__main">
+                    <span class="tl-role" data-fr="Stage de Fin d'Études — Développeur Full Stack" data-en="Final-Year Internship — Full Stack Developer">Stage de Fin d'Études — Développeur Full Stack</span>
+                    <h3 class="tl-company grad">CIH Bank</h3>
+                  </div>
+                  <div class="tl-meta">
+                    <span class="tl-date" data-fr="Fév 2024 – Août 2024" data-en="Feb 2024 – Aug 2024">Fév 2024 – Août 2024</span>
+                    <span class="tl-loc">Casablanca</span>
+                  </div>
+                </div>
+
+                <div class="tl-projects">
+                  <div class="tl-project">
+                    <span class="tl-project__num">01</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Solution Back Office de consultation des messages IBM MQ" data-en="Back Office solution to browse IBM MQ messages">Solution Back Office de consultation des messages IBM MQ</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Conception et développement d'une application Back Office permettant aux équipes Support N2 de consulter et suivre les messages IBM MQ." data-en="Design and development of a Back Office application letting N2 Support teams browse and track IBM MQ messages.">Conception et développement d'une application Back Office permettant aux équipes Support N2 de consulter et suivre les messages IBM MQ.</li>
+                        <li data-fr="Développement d'API REST sécurisées avec Spring Boot, Spring Security et Spring Data JPA." data-en="Secured REST API development with Spring Boot, Spring Security and Spring Data JPA.">Développement d'API REST sécurisées avec Spring Boot, Spring Security et Spring Data JPA.</li>
+                        <li data-fr="Développement de l'interface utilisateur avec React.js, JavaScript et Material UI." data-en="User interface development with React.js, JavaScript and Material UI.">Développement de l'interface utilisateur avec React.js, JavaScript et Material UI.</li>
+                        <li data-fr="Intégration de Keycloak pour la gestion de l'authentification et des accès." data-en="Keycloak integration for authentication and access management.">Intégration de Keycloak pour la gestion de l'authentification et des accès.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>Spring Data JPA</span><span>React.js</span><span>Material UI</span><span>Keycloak</span></div>
+                    </div>
+                  </div>
+
+                  <div class="tl-project">
+                    <span class="tl-project__num">02</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Batch automatisé de création de comptes tiers" data-en="Automated batch creation of third-party accounts">Batch automatisé de création de comptes tiers</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Développement d'un traitement batch pour automatiser la création en masse de comptes tiers." data-en="Development of a batch process to automate the mass creation of third-party accounts.">Développement d'un traitement batch pour automatiser la création en masse de comptes tiers.</li>
+                        <li data-fr="Implémentation des traitements de données et de la persistance avec Spring Batch et Spring Data JPA." data-en="Data processing and persistence implemented with Spring Batch and Spring Data JPA.">Implémentation des traitements de données et de la persistance avec Spring Batch et Spring Data JPA.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Java</span><span>Spring Batch</span><span>Spring Data JPA</span></div>
+                    </div>
+                  </div>
+
+                  <div class="tl-project">
+                    <span class="tl-project__num">03</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Service de géolocalisation des agences bancaires" data-en="Bank branch geolocation service">Service de géolocalisation des agences bancaires</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Conception et développement d'un service REST permettant d'identifier les agences les plus proches et adaptées au traitement des demandes clients, afin d'optimiser leur orientation." data-en="Design and development of a REST service to find the nearest branches suited to handling customer requests, optimising their routing.">Conception et développement d'un service REST permettant d'identifier les agences les plus proches et adaptées au traitement des demandes clients, afin d'optimiser leur orientation.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Java</span><span>Spring Boot</span><span>Spring Data JPA</span><span>REST API</span></div>
+                    </div>
+                  </div>
+
+                  <div class="tl-project">
+                    <span class="tl-project__num">04</span>
+                    <div class="tl-project__body">
+                      <h4 data-fr="Automatisation de la signature des documents de mise en production" data-en="Automation of release document signing">Automatisation de la signature des documents de mise en production</h4>
+                      <ul class="tl-list">
+                        <li data-fr="Développement d'une solution visant à automatiser le processus de signature des documents nécessaires à la mise en production." data-en="Development of a solution to automate the signing process of documents required for production release.">Développement d'une solution visant à automatiser le processus de signature des documents nécessaires à la mise en production.</li>
+                        <li data-fr="Développement des services backend et des API REST pour la gestion du processus." data-en="Development of backend services and REST APIs for process management.">Développement des services backend et des API REST pour la gestion du processus.</li>
+                      </ul>
+                      <div class="tl-tags"><span>Java</span><span>Spring Boot</span><span>Spring Data JPA</span><span>REST API</span><span>Keycloak</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section section--alt" id="projects">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="eyebrow" data-fr="Portfolio" data-en="Portfolio">Portfolio</span>
+            <h2 class="section__title" data-fr="Projets sélectionnés" data-en="Selected projects">Projets sélectionnés</h2>
+            <p class="section__sub" data-fr="Une sélection de réalisations professionnelles et personnelles." data-en="A selection of professional and personal work.">
+              Une sélection de réalisations professionnelles et personnelles.
+            </p>
+          </div>
+
+          <div class="projects">
+            <!-- Featured -->
+            <article class="project project--wide reveal">
+              <div class="project__media">
+                <img src="./assets/project-engagement-dashboard.png" alt="Digital Engagement platform" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Zatsit · Digital Engagement" data-en="Zatsit · Digital Engagement">Zatsit · Digital Engagement</span>
+                <h3 data-fr="Digital Engagement — Segmentation client &amp; campagnes" data-en="Digital Engagement — Customer segmentation &amp; campaigns">
+                  Digital Engagement — Segmentation client &amp; campagnes
+                </h3>
+                <p
+                  data-fr="Conception et développement d'une plateforme bancaire de Digital Engagement dédiée à la segmentation client, à la création d'audiences ciblées et à la gestion de campagnes personnalisées. Full Stack Java 17, Spring Boot et React.js, au sein d'une architecture microservices (Spring Cloud, OpenFeign) : microservices Segment Definition, Segment Membership, Audience Definition et Audience Calculation & Materialization, calcul et matérialisation asynchrones à grande échelle (traitement par lots, pagination, planification, reprise sur erreur), APIs REST sécurisées (Spring Security, OAuth2/JWT, Keycloak, OpenAPI/Swagger), PostgreSQL & MongoDB, tests (JUnit 5, Mockito, Testcontainers) et observabilité (Micrometer, Prometheus, OpenTelemetry, Spring Actuator), avec Docker, GitLab CI/CD et Jenkins."
+                  data-en="Design and development of a banking Digital Engagement platform dedicated to customer segmentation, targeted audience creation and personalised campaign management. Full Stack with Java 17, Spring Boot and React.js within a microservices architecture (Spring Cloud, OpenFeign): Segment Definition, Segment Membership, Audience Definition and Audience Calculation & Materialization microservices, large-scale asynchronous audience calculation and materialization (batching, pagination, scheduling, error recovery), secured REST APIs (Spring Security, OAuth2/JWT, Keycloak, OpenAPI/Swagger), PostgreSQL & MongoDB, testing (JUnit 5, Mockito, Testcontainers) and observability (Micrometer, Prometheus, OpenTelemetry, Spring Actuator), with Docker, GitLab CI/CD and Jenkins."
+                >
+                  Conception et développement d'une plateforme bancaire de Digital Engagement dédiée à la segmentation
+                  client, à la création d'audiences ciblées et à la gestion de campagnes personnalisées. Full Stack
+                  Java 17, Spring Boot et React.js, au sein d'une architecture microservices (Spring Cloud, OpenFeign).
+                </p>
+                <div class="project__stack">
+                  <span>Java 17</span><span>Spring Boot</span><span>React.js</span><span>Spring Cloud</span><span>Keycloak</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/project-customer-360.png" alt="Digital Assist platform" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Zatsit · Digital Assist · Banque" data-en="Zatsit · Digital Assist · Banking">Zatsit · Digital Assist · Banque</span>
+                <h3 data-fr="Digital Assist — Banque" data-en="Digital Assist — Banking">Digital Assist — Banque</h3>
+                <p
+                  data-fr="Développement d'une plateforme bancaire de Digital Assist avec React.js, TypeScript et Spring Boot : conception et développement de microservices et d'API REST sécurisées, implémentation de fonctionnalités de segmentation client et de création d'audiences ciblées, gestion et personnalisation de campagnes multicanales, et intégration de Keycloak pour l'authentification, la gestion des rôles et le contrôle des accès."
+                  data-en="Development of a banking Digital Assist platform with React.js, TypeScript and Spring Boot: design and development of microservices and secured REST APIs, implementation of customer segmentation and targeted audience features, multi-channel campaign management and personalisation, and Keycloak integration for authentication, role management and access control."
+                >
+                  Développement d'une plateforme bancaire de Digital Assist avec React.js, TypeScript et Spring Boot :
+                  microservices et APIs REST sécurisées, segmentation client et création d'audiences ciblées,
+                  gestion et personnalisation de campagnes multicanales, intégration de Keycloak.
+                </p>
+                <div class="project__stack">
+                  <span>React (TS)</span><span>Spring Boot</span><span>Microservices</span><span>Keycloak</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/project-kazia.png" alt="KAZIA CRM multi-tenant" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="KAZ-IA · SaaS · CRM" data-en="KAZ-IA · SaaS · CRM">KAZ-IA · SaaS · CRM</span>
+                <h3 data-fr="Plateforme SaaS CRM Multi-Tenant" data-en="Multi-Tenant SaaS CRM Platform">
+                  Plateforme d'extraction intelligente de documents
+                </h3>
+                <p
+                  data-fr="Développement d'une plateforme CRM multi-tenant assurant l'isolation des données clients et le suivi des activités. Backend Spring Boot, Spring Security, Spring Data JPA, microservices et APIs REST ; DevOps avec Docker, GitLab CI/CD et Keycloak ; base PostgreSQL."
+                  data-en="Development of a multi-tenant CRM platform ensuring customer data isolation and activity tracking. Spring Boot, Spring Security, Spring Data JPA backend, microservices and REST APIs; DevOps with Docker, GitLab CI/CD and Keycloak; PostgreSQL database."
+                >
+                  Conception d'une plateforme d'analyse et d'extraction de données depuis des documents à l'aide d'un moteur IA basé sur des modèles dynamiques. Frontend & Backend Next.js (API Routes / Server Actions), base MongoDB et moteur d'extraction et parsing de documents.
+                </p>
+                <div class="project__stack">
+                  <span>Spring Boot</span><span>Spring Security</span><span>PostgreSQL</span><span>Docker</span><span>Keycloak</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/project-cabinet.png" alt="Cabinet pédiatrique" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Santé · Web" data-en="Health · Web">Santé · Web</span>
+                <h3>Cabinet Pédiatrique</h3>
+                <p
+                  data-fr="Site web moderne pour un cabinet de pédiatrie à Casablanca : prise de rendez-vous en ligne, présentation des services et espace patient."
+                  data-en="Modern website for a pediatric clinic in Casablanca: online booking, services presentation and patient area."
+                >
+                  Site web moderne pour un cabinet de pédiatrie à Casablanca : prise de rendez-vous en ligne,
+                  présentation des services et espace patient.
+                </p>
+                <div class="project__stack"><span>React</span><span>Spring Boot</span><span>REST API</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/projet-5.png" alt="GFA files d'attente" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="API · Banque" data-en="API · Banking">API · Banque</span>
+                <h3>GFA — Gestion des files d'attente</h3>
+                <p
+                  data-fr="Microservice permettant aux clients CIH de connaître le statut des files d'attente des agences depuis le canal mobile et de localiser l'agence la plus proche (LAT/LON)."
+                  data-en="Microservice letting CIH customers track branch queue status from the mobile channel and find the nearest branch (LAT/LON)."
+                >
+                  Microservice permettant aux clients CIH de connaître le statut des files d'attente des agences
+                  depuis le canal mobile et de localiser l'agence la plus proche (LAT/LON).
+                </p>
+                <div class="project__stack"><span>Spring Boot</span><span>REST API</span><span>Microservice</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/cih-bank.jpg" alt="CIH Tool Box" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Interne · Banque" data-en="Internal · Banking">Interne · Banque</span>
+                <h3>CIH Tool Box</h3>
+                <p
+                  data-fr="Outils internes pour consulter les messages des files d'attente en erreur sans accès direct aux serveurs MQ PROD, marquer les messages résolus, rechercher par critères et consulter l'historique de batch."
+                  data-en="Internal tooling to inspect error-queue messages without direct access to PROD MQ servers, mark messages resolved, search by criteria and browse batch history."
+                >
+                  Outils internes pour consulter les messages des files d'attente en erreur sans accès direct aux
+                  serveurs MQ PROD, marquer les messages résolus, rechercher par critères et consulter l'historique de
+                  batch.
+                </p>
+                <div class="project__stack"><span>Spring Boot</span><span>IBM MQ</span><span>React</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/projet-4.png" alt="Affectation massique des cartes" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Batch · Banque" data-en="Batch · Banking">Batch · Banque</span>
+                <h3 data-fr="Affectation massique des cartes prépayées" data-en="Mass prepaid card assignment">
+                  Affectation massique des cartes prépayées
+                </h3>
+                <p
+                  data-fr="Batch Spring Batch de création en masse de tiers et d'affectation de cartes prépayées à partir d'un fichier CSV."
+                  data-en="Spring Batch job for mass creation of third parties and prepaid card assignment from a CSV file."
+                >
+                  Batch Spring Batch de création en masse de tiers et d'affectation de cartes prépayées à partir d'un
+                  fichier CSV.
+                </p>
+                <div class="project__stack"><span>Spring Batch</span><span>PostgreSQL</span><span>CSV</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/1.jpg" alt="E-commerce parfums" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="E-commerce" data-en="E-commerce">E-commerce</span>
+                <h3 data-fr="Site e-commerce de parfums" data-en="Perfume e-commerce site">Site e-commerce de parfums</h3>
+                <p
+                  data-fr="Application e-commerce pour la vente de parfums pour hommes et femmes, avec catalogue et panier."
+                  data-en="E-commerce application to sell perfumes for men and women, with catalogue and cart."
+                >
+                  Application e-commerce pour la vente de parfums pour hommes et femmes, avec catalogue et panier.
+                </p>
+                <div class="project__stack"><span>PHP</span><span>MySQL</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/projet-1.jpg" alt="Livraison de colis" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Logistique" data-en="Logistics">Logistique</span>
+                <h3 data-fr="Livraison de colis" data-en="Parcel delivery">Livraison de colis</h3>
+                <p
+                  data-fr="Application de livraison de colis permettant de suivre et distribuer les colis aux clients d'une entreprise."
+                  data-en="Parcel delivery application to track and dispatch parcels to a company's customers."
+                >
+                  Application de livraison de colis permettant de suivre et distribuer les colis aux clients d'une
+                  entreprise.
+                </p>
+                <div class="project__stack"><span>Java</span><span>Laravel</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/app-3.jpg" alt="Gestion des absences" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="RH" data-en="HR">RH</span>
+                <h3 data-fr="Gestion des absences" data-en="Absence management">Gestion des absences</h3>
+                <p
+                  data-fr="Application de gestion des absences des salariés au sein d'une entreprise."
+                  data-en="Application to manage employee absences within a company."
+                >
+                  Application de gestion des absences des salariés au sein d'une entreprise.
+                </p>
+                <div class="project__stack"><span>Java JEE</span><span>MySQL</span></div>
+              </div>
+            </article>
+
+            <article class="project reveal">
+              <div class="project__media">
+                <img src="./assets/app-6.jpg" alt="Étude de marché" />
+              </div>
+              <div class="project__info">
+                <span class="project__tag" data-fr="Data" data-en="Data">Data</span>
+                <h3 data-fr="Étude de marché" data-en="Market study">Étude de marché</h3>
+                <p
+                  data-fr="Application web d'import/export de dossiers concurrents (papier ou site) et d'analyse pour extraire le moins disant (gagnant du marché)."
+                  data-en="Web app to import/export competitor files (paper or site) and analyse them to extract the lowest bidder (market winner)."
+                >
+                  Application web d'import/export de dossiers concurrents (papier ou site) et d'analyse pour extraire
+                  le moins disant (gagnant du marché).
+                </p>
+                <div class="project__stack"><span>C#</span><span>SQL</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact reveal">
+            <div class="contact__intro">
+              <span class="eyebrow" data-fr="Contact" data-en="Contact">Contact</span>
+              <h2 class="section__title" data-fr="Travaillons ensemble" data-en="Let's work together">Travaillons ensemble</h2>
+              <p
+                data-fr="Vous avez un projet, une opportunité ou une question ? Écrivez-moi, je réponds rapidement."
+                data-en="Have a project, an opportunity or a question? Drop me a line, I reply quickly."
+              >
+                Vous avez un projet, une opportunité ou une question ? Écrivez-moi, je réponds rapidement.
+              </p>
+
+              <div class="contact__list">
+                <a href="mailto:mohammedlakhal272@gmail.com" class="contact__item">
+                  <span class="contact__ic">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+                  </span>
+                  <span>
+                    <small data-fr="Email" data-en="Email">Email</small>
+                    <strong>mohammedlakhal272@gmail.com</strong>
+                  </span>
+                </a>
+                <a href="tel:+212639003171" class="contact__item">
+                  <span class="contact__ic">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 4h4l2 5-3 2a12 12 0 006 6l2-3 5 2v4a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1z"/></svg>
+                  </span>
+                  <span>
+                    <small data-fr="Téléphone" data-en="Phone">Téléphone</small>
+                    <strong>+212 639 003 171</strong>
+                  </span>
+                </a>
+                <div class="contact__item contact__item--static">
+                  <span class="contact__ic">
+                    <svg viewBox="0 0 24 24" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="2" d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                  </span>
+                  <span>
+                    <small data-fr="Localisation" data-en="Location">Localisation</small>
+                    <strong data-fr="Ain el Borja, Casablanca" data-en="Ain el Borja, Casablanca">Ain el Borja, Casablanca</strong>
+                  </span>
+                </div>
+              </div>
+
+              <div class="contact__socials">
+                <a href="https://www.linkedin.com/in/lakhal-mohammed-7ba5b3229/" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/simolakhal97" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <form class="contact__form" id="contactForm" novalidate>
+              <div class="field">
+                <label data-fr="Nom" data-en="Name">Nom</label>
+                <input type="text" name="name" required placeholder="Votre nom" data-ph-fr="Votre nom" data-ph-en="Your name" />
+              </div>
+              <div class="field">
+                <label data-fr="Email" data-en="Email">Email</label>
+                <input type="email" name="email" required placeholder="votre@email.com" data-ph-fr="votre@email.com" data-ph-en="you@email.com" />
+              </div>
+              <div class="field">
+                <label data-fr="Message" data-en="Message">Message</label>
+                <textarea name="message" rows="4" required placeholder="Votre message" data-ph-fr="Votre message" data-ph-en="Your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <span data-fr="Envoyer le message" data-en="Send message">Envoyer le message</span>
+              </button>
+              <p class="form-note" id="formNote" data-fr="Ou écrivez-moi directement par email." data-en="Or reach me directly by email.">
+                Ou écrivez-moi directement par email.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#home" class="nav__logo">
+          <span class="nav__logo-mark">ML</span>
+          <span class="nav__logo-text">Mohammed Lakhal</span>
+        </a>
+        <p data-fr="Conçu & développé avec soin — © 2026 Mohammed Lakhal." data-en="Designed & built with care — © 2026 Mohammed Lakhal.">
+          Conçu &amp; développé avec soin — © 2026 Mohammed Lakhal.
+        </p>
+        <a href="#home" class="footer__top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
