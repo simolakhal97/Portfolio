@@ -183,6 +183,10 @@
     langOpts.forEach((o) =>
       o.classList.toggle("is-active", o.dataset.lang === lang)
     );
+
+    const cvLink = $("#cvLink");
+    if (cvLink) cvLink.href = "./assets/resume-" + lang + ".pdf";
+
     try {
       localStorage.setItem("ml-lang", lang);
     } catch (e) {}
